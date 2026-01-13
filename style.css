@@ -96,6 +96,7 @@
 .dashboard-label{
     font-size: var(--font-size-medium);
     color: white;
+    font-weight: bold;
 }
 
 .content-container{
@@ -166,6 +167,8 @@
 .bottom-nav{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
 }
 
 .nav-welcome{
@@ -174,7 +177,7 @@
     justify-content: start;
     align-items: center;
 
-    padding: 15px;
+    padding: 15px 0 0 30px;
 }
 
 .avatar-image{
@@ -206,5 +209,27 @@
     height: 80px;
 }
 
+.project-management-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: bottom;
 
+    padding: 15px 50px;
+    gap: 35px;
+}
+
+.project-management-buttons{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+
+    width: 100px;
+    min-width: 75px;
+    height: 50px;
+
+    font-weight: bold;
+    color: white;
+}
 
