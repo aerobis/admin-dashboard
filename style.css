@@ -10,10 +10,9 @@
 :root{
     --primary-color: rgb(32, 171, 226); /*That of dashboard*/
     --secondary-color: rgb(215, 212, 212); /*That of the projects container*/
-    --font-size-large: 2rem;
-    --font-size-medium: 1.3rem;
-    --font-size-normal: 1rem;
-    --font-size-small: 0.7rem;
+    --font-size-large: clamp(1rem, 1.5rem ,2rem);
+    --font-size-medium: clamp(0.7rem, 1rem ,1.3rem);
+    --font-size-normal: clamp(0.4rem, 0.8rem ,1rem);
 }
 
 @font-face{
@@ -106,6 +105,8 @@
 }
 
 /*MAIN*/
+
+/*TOP LEFT SIDE OF THE NAV*/
 .top-left-nav{
     display:grid;
     grid-auto-flow: row;
@@ -170,5 +171,38 @@
     height: 80px;
 }
 
+/*TOP RIGHT SIDE OF THE NAV*/
+.top-right-nav{
+    display:grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr 1fr;
+}
+
+.profile-center{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+    
+    padding-right: 50px;
+    gap: 20px;
+
+    box-sizing: border-box;
+}
+
+.profile-center > .avatar-image{
+    width: 60px;
+    height: 60px;
+}
+
+.profile-center > .username{
+    font-size: var(--font-size-medium)
+}
+
+.profile-center .normal-icon,
+.profile-center .username {
+    display: inline-block; /* Ensure proper alignment */
+    vertical-align: middle; /* Align with the middle of the avatar */
+}
 
 
