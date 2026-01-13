@@ -44,6 +44,12 @@
 
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: columns;
+
+    padding: 10px;
 }
 
 .projects{
@@ -54,6 +60,8 @@
 }
 
 /*CONTENT INSIDE THE SECTIONS*/
+
+/*DASHBOARD*/
 .title{
     font-size: 2rem;
     color: white;
@@ -69,8 +77,6 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-
-    gap: px;
 }
 
 .dashboard-label{
@@ -83,3 +89,6 @@
     flex-direction: column;
     gap: 15px;
 }
+
+/*MAIN*/
+
