@@ -268,7 +268,7 @@
 }
 
 .project-cards {
-    padding: 15px;
+    padding: 15px 15px 50px 30px;
     border: 1px solid #ccc; 
     border-radius: 10px;
     background-color: white;
@@ -276,6 +276,10 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
+
+    box-shadow: 2px 2px 5px #888888;
+    border-left: 3px solid black;
 }
 
 .project-card-header{
@@ -288,11 +292,31 @@
     color: gray;
 }
 
+.project-card-icons{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.project-card-icons>*{
+    width: 40px;
+    height: 25px;
+}
+
+.project-card-icons:hover{
+    cursor: pointer;
+}
+
+
+
+/* --------------------------------------- */
+
 .announcements{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 
     padding: 10px;
+
 }
 
 .trending{
