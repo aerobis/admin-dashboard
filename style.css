@@ -390,7 +390,14 @@
     flex-direction: column;
 }
 
+.trending-cards-text > .username{
+    font-size:var(--font-size-medium);
+}
 
+.trending-cards-text > .user-project-title{
+    font-size:var(--font-size-normal);
+    color: gray;
+}
 
 
 
